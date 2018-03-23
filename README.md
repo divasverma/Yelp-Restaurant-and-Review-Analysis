@@ -14,6 +14,7 @@ attributes like ‘RestaurantPrice Range’, ‘RestaurantsTableService’, etc.
 each business were scanned and only those businesses with attributes pertaining to
 restaurant were added to the final dataset. All the data reading and data manipulation was
 done using Pandas.
+
 Once the data was cleaned some basic analysis and visualization was conducted. Most of the
 restaurants had some category, like ‘Italian’ or ‘Mexican’ attached with it. Ten broad
 categories of cuisine were chosen, the variety of cuisines, in the given data, in each state was
@@ -25,6 +26,7 @@ the day of the week was investigated. For all the states, the number average foo
 increased drastically over the weekend, especially on Saturday’s. The average rating, on the
 other hand was more or less uniform. Thus, it cannot be said, generally, that an increase in
 number of customers leads to poor service in a restaurant.
+
 Next the reviews for each restaurant were analyzed. Each review was broken down into
 sentences and POS tagging was used to tag each word in the sentence. The noun in each
 sentence was added, if it already did not exist, to a dictionary of ‘qualities’ maintained for each
@@ -43,13 +45,13 @@ A function was defined that takes as input a food item and a city. For example, 
 have the highest value for the given food item, pizza, in their dictionaries. This way the top
 five pizza places in Las Vegas, based on Yelp reviews are chosen. A word cloud for each
 restaurant is generated for the user so that the user can then decide which restaurant to visit
-
 based on the other offerings of the place, which can be easily picked out from the word cloud.
 Another function is defined that goes through the dictionaries of all the restaurants for a given
 state, and return the highest valued ‘qualities’ after joining all these dictionaries. This way the
 most valued ‘qualities’, by each state can be analyzed. It can be seen that service and staff
 are recurring qualities across states, implying that these are the most valued qualities by
 customers. Some food items like coffee also made an appearance on the list.
+
 Since all customers have different ways of giving rating and reviews, and often the ratings do
 not give a true depiction of the overall sentiment of a review, we analyzed the positive
 sentiment in each of the reviews. This analysis is critical for restaurants to help them filter out
